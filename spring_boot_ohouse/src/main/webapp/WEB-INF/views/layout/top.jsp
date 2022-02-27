@@ -75,11 +75,17 @@
 				       		 <li><a href="<c:url value='logout'/>">로그아웃</a></li>
 				       	
 				       		<li><a href="<c:url value='/listAllMember'/>">멤버조회</a></li>
-					        <li><a href="<c:url value='/clovaOCRForm'/>">OCR</a></li>
-					        <li><a href="<c:url value='/drugForm'/>">e약은요 API</a></li>
-					        <li><a href="<c:url value='/drugSave'/>">e약은요 API 저장 test</a></li>
-					        <li><a href="<c:url value='/naver'/>">NAVER API검색</a></li>
-					        <li><a href="<c:url value='/pubApi'/>">의약품허가정보 API:JSON</a></li>
+				       		
+				       		<li class="dropdown">
+					          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">AI&API <span class="caret"></span></a>
+					          	<ul class="dropdown-menu" role="menu">
+							        <li><a href="<c:url value='/clovaOCRForm'/>">OCR</a></li>
+							        <li><a href="<c:url value='/drugForm'/>">e약은요 API</a></li>
+							        <li><a href="<c:url value='/drugSave'/>">e약은요 API 저장 test</a></li>
+							        <li><a href="<c:url value='/naver'/>">NAVER API검색</a></li>
+							        <li><a href="<c:url value='/pubApi'/>">의약품허가정보 API:JSON</a></li>
+					        	</ul>
+				        	</li>
 				        	<li><a href="#">고객센터</a></li>
 				        	<li><a href="#">글쓰기</a></li>
 		         	   	<c:if test="${not empty sessioScope.sid }">
