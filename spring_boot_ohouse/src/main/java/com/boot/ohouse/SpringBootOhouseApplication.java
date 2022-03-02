@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.ComponentScan;
 
 import com.boot.ohouse.dao.IDrugSaveDAO;
+import com.boot.ohouse.dao.IDrugShapeDAO;
 import com.boot.ohouse.dao.IMemberDAO;
 
 @SpringBootApplication
@@ -14,6 +15,7 @@ import com.boot.ohouse.dao.IMemberDAO;
 //@ComponentScan(basePackageClasses=MemberController.class)
 @MapperScan(basePackageClasses = IMemberDAO.class)
 @MapperScan(basePackageClasses = IDrugSaveDAO.class)
+@MapperScan(basePackageClasses = IDrugShapeDAO.class)
 public class SpringBootOhouseApplication {
 
 	public static void main(String[] args) {

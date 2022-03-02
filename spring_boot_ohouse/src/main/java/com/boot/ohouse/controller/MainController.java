@@ -19,4 +19,6 @@ public class MainController {
 	public String joinForm() {
 		return "member/joinForm";
 	}
+	
+
 }
